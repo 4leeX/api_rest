@@ -7,7 +7,6 @@ require_once 'classes/estoque.php';
 class Rest{
 	public static function open($requisicao){
 		$url = explode('/', $_REQUEST['url']);
-		var_dump($url);
 
 		$classe = ucfirst($url[0]);
 		array_shift($url);
